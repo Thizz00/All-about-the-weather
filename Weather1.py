@@ -322,7 +322,7 @@ class Ui_Form(object):
             import math
             from datetime import date
             city_name=self.lineEdit.text()
-            API_key='538be11d22190e636b7e9192b2948209'
+            API_key='Your_api_key'
             self.r = requests.get('http://api.openweathermap.org/data/2.5/weather?q='+city_name+'&appid='+API_key)
             city=self.r.json()['name']
             date=date.today()
