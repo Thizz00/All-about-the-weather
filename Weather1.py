@@ -327,7 +327,6 @@ class Ui_Form(object):
             city=self.r.json()['name']
             date=date.today()
             temperature=self.r.json()['main']['temp'] 
-            #temperature-272.15
             weather=self.r.json()['weather'][0]['main']
             coordinates=str(self.r.json()['coord']['lon'])+' Long '+str(self.r.json()['coord']['lat'])+' Lat '
             self.textBrowser.append(str(round(temperature-272.15))+'°C')
