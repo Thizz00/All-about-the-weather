@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+import sys
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -270,7 +270,7 @@ class Ui_Form(object):
         self.label.raise_()
         self.pushButton.raise_()
         self.pushButton_3.raise_()
-        self.pushButton_3.clicked.connect(lambda:self.close())
+        self.pushButton_3.clicked.connect(lambda:sys.exit())
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -315,8 +315,6 @@ class Ui_Form(object):
             self.textBrowser_3.setText('')
             self.textBrowser_4.setText('')
             self.textBrowser_5.setText('')
-    def close(self):
-            self.close()
 
 if __name__ == "__main__":
     import sys
