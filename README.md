@@ -9,7 +9,7 @@ pip install requests
 import requests
 city_name='city'
 API_key='Your_api_key'
-requests.get('https://api.openweathermap.org/data/2.5/weather?q='{city name}+'&appid='+{API key})
+requests.get('https://api.openweathermap.org/data/2.5/weather?q='{city_name}+'&appid='+{API_key})
 ```
 
 
