@@ -1,7 +1,18 @@
 # WeatherApp
-## Desktop application showing current weather and date for the city name given by the user.
-\
-\
+
+```
+pip install PyQt5
+pip install requests
+```
+
+```python
+import requests
+city_name='city'
+API_key='Your_api_key'
+requests.get('https://api.openweathermap.org/data/2.5/weather?q='{city name}+'&appid='+{API key})
+```
+
+
 ![alt text](1.png)
 \
 \
